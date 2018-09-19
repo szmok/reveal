@@ -40,6 +40,12 @@
 						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
 					</p>
 				</section>
+				
+				<section>
+					<div class="fig-container"
+						data-fig-id="fig-collision-detection"
+						data-file="diagram.html"></div>
+				</section>
 			</div>
 
 		</div>
@@ -56,7 +62,9 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'https://d3js.org/d3.v4.min.js' },
+					{ src: 'node_modules/reveal.js-d3js/d3js.js' }
 				]
 			});
 		</script>
